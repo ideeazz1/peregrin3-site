@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script defer src="/config/plausible.js"></script>
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/preview-card.png">
+<meta name="theme-color" content="#343A40">
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex, nofollow">
+<title>Research Brief | dmDickason Personnel Services | Peregrine Consultants</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1f1d18;
+    --ink-light: #4a463e;
+    --ink-soft: #756f63;
+    --paper: #faf6ec;
+    --paper-deep: #f3ecd9;
+    --paper-warm: #f7f0dd;
+    --accent: #6b3326;
+    --accent-soft: #f1e5e0;
+    --line: #d4cab2;
+    --line-soft: #e8dfc7;
+    --gold: #b88c2a;
+    --dickason-cyan: #0E9FB4;
+    --dickason-cyan-light: #5ec3d2;
+    --dickason-cyan-soft: #e6f5f8;
+    --dickason-purple: #421D80;
+    --dickason-purple-light: #6e4ba8;
+    --dickason-purple-soft: #ece6f5;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.7;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  .container { max-width: 760px; margin: 0 auto; padding: 64px 40px 80px; }
+  @media (max-width: 640px) { .container { padding: 40px 22px 60px; } }
+
+  /* Partnership header */
+  .partnership-header {
+    border-bottom: 2px solid var(--dickason-cyan);
+    padding-bottom: 24px;
+    margin-bottom: 56px;
+  }
+  .ph-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  .ph-peregrine {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: -0.01em;
+  }
+  .ph-x {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    color: var(--ink-soft);
+    font-weight: 300;
+    margin: 0 8px;
+  }
+  .ph-dickason {
+    max-height: 56px;
+    width: auto;
+  }
+  .ph-meta {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--ink-soft);
+    font-weight: 500;
+    text-align: right;
+  }
+  .ph-meta-confidential { color: var(--accent); }
+
+  /* Masthead */
+  .masthead { margin-bottom: 56px; }
+  .kicker {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    color: var(--dickason-cyan);
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(36px, 5.5vw, 54px);
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    color: var(--ink);
+    margin-bottom: 20px;
+  }
+  .deck {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: clamp(18px, 2.2vw, 22px);
+    line-height: 1.4;
+    color: var(--ink-light);
+    max-width: 600px;
+  }
+  .from-line {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-top: 32px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    letter-spacing: 0.02em;
+    line-height: 1.7;
+  }
+  .from-line strong { color: var(--ink); font-weight: 600; }
+
+  /* Section structure */
+  section { margin-top: 64px; }
+  h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(24px, 2.8vw, 30px);
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+    margin-bottom: 16px;
+  }
+  .lede {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--ink-light);
+    line-height: 1.5;
+    margin-bottom: 28px;
+    max-width: 600px;
+  }
+  p {
+    font-size: 17px;
+    line-height: 1.75;
+    margin-bottom: 18px;
+    color: var(--ink-light);
+    max-width: 620px;
+  }
+  p strong { color: var(--ink); font-weight: 600; }
+
+  .opener::first-letter {
+    font-family: 'Fraunces', serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 0.9;
+    float: left;
+    margin: 8px 12px -4px 0;
+    color: var(--dickason-cyan);
+  }
+
+  /* Research note */
+  .research-note {
+    background: var(--paper-warm);
+    border-left: 3px solid var(--gold);
+    padding: 18px 24px;
+    margin: 28px 0;
+    border-radius: 0 3px 3px 0;
+  }
+  .research-note p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--ink);
+    margin: 0;
+    max-width: none;
+  }
+  .research-note strong { color: var(--gold); }
+
+  /* Company fact grid */
+  .fact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 24px 0 32px;
+  }
+  @media (max-width: 580px) { .fact-grid { grid-template-columns: 1fr 1fr; } }
+  .fact {
+    background: var(--paper-deep);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 14px 16px;
+  }
+  .fact-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-soft);
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .fact-value {
+    font-family: 'Fraunces', serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.3;
+  }
+  .fact-value.cyan { color: var(--dickason-cyan); }
+
+  /* Observations */
+  .observation {
+    padding: 22px 0;
+    border-top: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: 52px 1fr;
+    gap: 20px;
+    align-items: start;
+  }
+  .observation:last-child { border-bottom: 1px solid var(--line); }
+  .obs-num {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1;
+    color: var(--dickason-cyan);
+    padding-top: 2px;
+  }
+  .obs-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+  .obs-body {
+    font-size: 15.5px;
+    color: var(--ink-light);
+    line-height: 1.65;
+    margin: 0;
+    max-width: none;
+  }
+  .obs-signal {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    font-weight: 600;
+    margin-top: 10px;
+    display: block;
+  }
+
+  /* Math card */
+  .math-card {
+    background: var(--paper-deep);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 32px 36px;
+    margin: 28px 0;
+  }
+  .math-card-eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+  .math-card h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 16px;
+    color: var(--ink);
+  }
+  .math-card p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+    max-width: none;
+  }
+  .math-numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 20px 0 16px;
+  }
+  @media (max-width: 540px) { .math-numbers { grid-template-columns: 1fr; } }
+  .math-num {
+    background: var(--paper);
+    padding: 14px 18px;
+    border-radius: 3px;
+    border: 1px solid var(--line-soft);
+  }
+  .math-num-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    color: var(--ink-soft);
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  .math-num-value {
+    font-family: 'Fraunces', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .math-num-value.gold { color: var(--gold); }
+
+  /* Pull quote */
+  .pull {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.4;
+    color: var(--ink);
+    border-left: 3px solid var(--dickason-purple);
+    padding: 6px 0 6px 28px;
+    margin: 36px 0;
+    font-style: italic;
+    max-width: 580px;
+  }
+
+  /* Risk block */
+  .risk-block {
+    background: var(--dickason-purple-soft);
+    border-left: 3px solid var(--dickason-purple);
+    padding: 24px 28px;
+    margin: 24px 0;
+    border-radius: 0 3px 3px 0;
+  }
+  .risk-block-eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--dickason-purple);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .risk-block h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: var(--ink);
+  }
+  .risk-block p {
+    font-size: 15.5px;
+    line-height: 1.65;
+    color: var(--ink-light);
+    margin-bottom: 10px;
+    max-width: none;
+  }
+  .risk-block p:last-child { margin-bottom: 0; }
+  .risk-block strong { color: var(--ink); }
+  .risk-cats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin: 16px 0;
+  }
+  @media (max-width: 520px) { .risk-cats { grid-template-columns: 1fr; } }
+  .risk-cat {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: var(--ink-light);
+    padding: 6px 10px;
+    background: rgba(66, 29, 128, 0.06);
+    border-radius: 3px;
+    line-height: 1.4;
+  }
+
+  /* Engagement bar */
+  .engagement-bar {
+    background: linear-gradient(135deg, var(--dickason-purple) 0%, var(--dickason-cyan) 100%);
+    color: white;
+    padding: 36px 36px;
+    border-radius: 6px;
+    margin: 28px 0;
+    box-shadow: 0 4px 20px rgba(66, 29, 128, 0.18);
+  }
+  .engagement-bar-eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .engagement-bar h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(22px, 3vw, 30px);
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+    margin-bottom: 14px;
+    color: white;
+  }
+  .engagement-bar p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 15.5px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    max-width: none;
+  }
+  .engagement-bar p:last-child { margin-bottom: 0; }
+  .engagement-bar strong { color: white; font-weight: 600; }
+  .engagement-bar a {
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+  }
+  .engagement-bar a:hover { border-bottom-color: white; }
+  .stages-brief {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    margin: 20px 0 16px;
+  }
+  @media (max-width: 600px) { .stages-brief { grid-template-columns: 1fr 1fr 1fr; } }
+  .stage-pill {
+    background: rgba(255, 255, 255, 0.12);
+    padding: 10px 12px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  .stage-pill-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: rgba(255, 255, 255, 0.65);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 2px;
+  }
+  .stage-pill-name {
+    font-family: 'Fraunces', serif;
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+  }
+
+  /* Champion */
+  .champion {
+    background: var(--paper-warm);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 28px 32px;
+    margin: 32px 0;
+  }
+  .champion h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 14px;
+    color: var(--ink);
+  }
+  .champion p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--ink-light);
+    margin-bottom: 14px;
+    max-width: none;
+  }
+  .champion p:last-child { margin-bottom: 0; }
+  .champion strong { color: var(--ink); }
+  .champion-person {
+    padding: 14px 0;
+    border-top: 1px solid var(--line-soft);
+  }
+  .champion-person:first-of-type { border-top: none; }
+  .champion-person-name {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--ink);
+    margin-bottom: 4px;
+  }
+
+  /* Family disclosure */
+  .family {
+    background: var(--paper-deep);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 28px 32px;
+    margin: 32px 0;
+  }
+  .family h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 14px;
+    color: var(--ink);
+  }
+  .family p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--ink-light);
+    margin-bottom: 14px;
+    max-width: none;
+  }
+  .family ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 12px;
+  }
+  .family li {
+    font-size: 15.5px;
+    color: var(--ink-light);
+    padding: 6px 0 6px 22px;
+    position: relative;
+    line-height: 1.5;
+  }
+  .family li::before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  /* Closing */
+  .closing { margin-top: 56px; padding-top: 32px; border-top: 1px solid var(--line); }
+  .closing-line {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 19px;
+    color: var(--ink-light);
+    margin-bottom: 24px;
+  }
+  .closing-name {
+    font-family: 'Fraunces', serif;
+    font-size: 19px;
+    color: var(--ink);
+    font-weight: 500;
+  }
+  .closing-meta {
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-top: 6px;
+    line-height: 1.7;
+  }
+  .closing-meta a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-soft);
+  }
+  .closing-meta a:hover { border-bottom-color: var(--accent); }
+
+  /* Footer */
+  .doc-footer {
+    margin-top: 64px;
+    font-size: 12px;
+    color: var(--ink-soft);
+    text-align: center;
+    font-style: italic;
+    border-top: 1px solid var(--line-soft);
+    padding-top: 20px;
+    line-height: 1.6;
+  }
+  .doc-footer .peregrine {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--accent);
+    font-weight: 500;
+    margin-top: 4px;
+    display: inline-block;
+  }
+  .doc-footer a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-soft);
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    .observation { grid-template-columns: 40px 1fr; gap: 14px; }
+    .obs-num { font-size: 26px; }
+    .math-card { padding: 22px 20px; }
+    .risk-block { padding: 20px 22px; }
+    .engagement-bar { padding: 28px 24px; }
+    .champion { padding: 22px 20px; }
+    .family { padding: 22px 20px; }
+    .pull { font-size: 19px; padding-left: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Partnership header -->
+  <header class="partnership-header">
+    <div class="ph-row">
+      <div style="display: flex; align-items: center; gap: 20px;">
+        <span class="ph-peregrine">Peregrine Consultants</span>
+        <span class="ph-x">&times;</span>
+        <img src="dickason-logo.png" alt="dmDickason Personnel Services" class="ph-dickason">
+      </div>
+      <div class="ph-meta">
+        <div class="ph-meta-confidential">Confidential</div>
+        <div>Research Brief</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Masthead -->
+  <header class="masthead">
+    <div class="kicker">Prospect Intelligence Brief</div>
+    <h1>What we found about Dickason before walking in the door</h1>
+    <p class="deck">Pre-engagement research on dmDickason Personnel Services and the operating gaps left by the 2022 staffing divestiture.</p>
+    <div class="from-line">
+      <strong>From:</strong> I. Diaz, Peregrine Consultants<br>
+      <strong>For:</strong> Alberto Diaz, to share with Don Dickason and Martha Olguin-Dickason as context for a first conversation
+    </div>
+  </header>
+
+  <!-- What we already know -->
+  <section>
+    <h2>What we already know</h2>
+    <p class="opener">Alberto, before we have had a single meeting at 4900 North Mesa, Peregrine has done its homework. What follows is a research-backed picture of Dickason as it stands today: the sixty-year story, the 2022 pivot, the operational signals visible from the outside, and the money we can already see sitting on the table.</p>
+    <p>This is not a pitch built on assumptions. Every observation here is grounded in public sources and what you shared directly. Stage 01 of the engagement will confirm or correct each one. The picture below is where we start, not where we guess.</p>
+
+    <div class="research-note">
+      <p><strong>How to read this document:</strong> These findings represent research completed before any internal access. Some of what follows will resonate immediately. Some of it may need correction. That is the point of bringing it to you first. This document exists so Don and Martha can see the depth of preparation before the first conversation happens.</p>
+    </div>
+
+    <div class="fact-grid">
+      <div class="fact">
+        <div class="fact-label">Founded</div>
+        <div class="fact-value">1965. Snelling franchise. El Paso.</div>
+      </div>
+      <div class="fact">
+        <div class="fact-label">Operating brand</div>
+        <div class="fact-value">dmDickasonHR</div>
+      </div>
+      <div class="fact">
+        <div class="fact-label">Headquarters</div>
+        <div class="fact-value">4900 N Mesa St, West El Paso</div>
+      </div>
+      <div class="fact">
+        <div class="fact-label">PEO licensure</div>
+        <div class="fact-value cyan">Texas + New Mexico</div>
+      </div>
+      <div class="fact">
+        <div class="fact-label">Industry body</div>
+        <div class="fact-value">NAPEO member, good standing</div>
+      </div>
+      <div class="fact">
+        <div class="fact-label">Certification</div>
+        <div class="fact-value">HUB Minority/Hispanic Woman-Owned</div>
+      </div>
+      <div class="fact">
+        <div class="fact-label">PEO division launched</div>
+        <div class="fact-value">2002, by Martha</div>
+      </div>
+      <div class="fact">
+        <div class="fact-label">Staffing division sold</div>
+        <div class="fact-value">Q1 2022 to HireQuest (~$18M revenue)</div>
+      </div>
+      <div class="fact">
+        <div class="fact-label">Average PEO client</div>
+        <div class="fact-value">Fewer than 15 employees</div>
+      </div>
+    </div>
+
+    <p>The leadership team is three generations of operational knowledge. Don Dickason built the staffing franchise starting in 1984. Martha Olguin-Dickason launched the PEO arm in 2002 and holds majority ownership. Kelly Dickason is Director of HR, the next generation moving closer to the center. Carol Salcedo, VP of HR and Operations, has held operational continuity through the divestiture. These are long-tenure relationships on both the leadership and client side, some running thirty-plus years.</p>
+    <p><strong>What Don and Martha built is real.</strong> Sixty years in El Paso is not an accident. The challenge is not the relationships. The challenge is the operating infrastructure underneath them.</p>
+  </section>
+
+  <!-- The post-2022 story -->
+  <section>
+    <h2>The post-2022 story</h2>
+    <p class="lede">The divestiture was the right move. The transition is not yet complete.</p>
+
+    <p>In January 2022, Dickason sold its staffing and temporary placement division to HireQuest Inc. That was approximately $18 million in annual revenue walking out the door. What stayed: the PEO, the ASO, and the payroll operation. The part Martha built in 2002. The focused business Don and Martha had been running alongside the staffing arm for twenty years.</p>
+    <p>The move made strategic sense. A pure-play PEO is a different business than a staffing company that also does PEO. The revenue model is recurring. The client relationships are deeper. The compliance footprint is more complex and more defensible.</p>
+    <p>Three years later, the operating infrastructure has not fully caught up to the strategy. What was a division inside a larger business is now the whole business, and the systems, processes, and external presentation still reflect the staffing-and-PEO era in several places.</p>
+    <p>The signals are visible from outside. Here is what we found.</p>
+  </section>
+
+  <!-- Eight observations -->
+  <section>
+    <h2>Eight things we noticed from the outside</h2>
+    <p class="lede">Everything here comes from publicly available sources. Each one tells a story about where the operation stands today.</p>
+
+    <div class="observation">
+      <div class="obs-num">01</div>
+      <div>
+        <div class="obs-title">Two websites running at the same time</div>
+        <p class="obs-body">The legacy dmdickason.com and the current dmdickason.curreyadkins.com are both live. The legacy site still calls Dickason "the only Full Service Staffing Company in El Paso." That copy was accurate before Q1 2022. It is no longer accurate. Three years after the divestiture, the public-facing story has two contradictory versions running side by side.</p>
+        <span class="obs-signal">What it signals: the post-2022 pivot is not yet reflected at the operating level</span>
+      </div>
+    </div>
+
+    <div class="observation">
+      <div class="obs-num">02</div>
+      <div>
+        <div class="obs-title">Two pricing tier vocabularies, both active</div>
+        <p class="obs-body">The new site offers Starter, Essential, and Supercharged packages. The legacy site offers Silver, Gold, and Platinum. Both are publicly accessible today. That means sales conversations, broker presentations, and client-facing collateral are almost certainly quoting different package names for the same services. Without a unified playbook, quoting is inconsistent across the team.</p>
+        <span class="obs-signal">What it signals: internal alignment on pricing is incomplete</span>
+      </div>
+    </div>
+
+    <div class="observation">
+      <div class="obs-num">03</div>
+      <div>
+        <div class="obs-title">Staffing job listings still live on the legacy site</div>
+        <p class="obs-body">Active job postings for a Dental Assistant and a Cable Installer are still visible on the legacy site. Dickason no longer places workers in those roles. Candidates clicking those listings are either hitting a 404 or landing at a HireQuest-owned entity. Either outcome is leakage Dickason did not sign up for.</p>
+        <span class="obs-signal">What it signals: the staffing-era digital infrastructure is still running unattended</span>
+      </div>
+    </div>
+
+    <div class="observation">
+      <div class="obs-num">04</div>
+      <div>
+        <div class="obs-title">Microsoft Dynamics GP named as the accounting backbone</div>
+        <p class="obs-body">A legacy CFO bio references Great Plains Dynamics as the core accounting system. Microsoft has been sunsetting that platform. The current state of the GP installation at Dickason is unknown from the outside, but any organization still running it is working against a forcing function. The migration is not a question of if. It is a question of when, and whether Dickason runs it on their timeline or on Microsoft's.</p>
+        <span class="obs-signal">What it signals: a system transition is coming that will affect reporting and daily operations</span>
+      </div>
+    </div>
+
+    <div class="observation">
+      <div class="obs-num">05</div>
+      <div>
+        <div class="obs-title">Average client under 15 employees</div>
+        <p class="obs-body">The site self-describes the average PEO client as fewer than 15 employees. That is an operationally expensive profile. Onboarding, compliance management, 941 filings, W-2 production, and relationship maintenance carry mostly fixed costs per client. At low employee counts, those costs compress the margin significantly. The question is which clients in the current book are below the profitability threshold and at what rate.</p>
+        <span class="obs-signal">What it signals: a portion of the client book is likely losing money at current rates</span>
+      </div>
+    </div>
+
+    <div class="observation">
+      <div class="obs-num">06</div>
+      <div>
+        <div class="obs-title">No system to score clients on profitability</div>
+        <p class="obs-body">Alberto confirmed this directly: no CRM, no view of which PEO plan each client is on, no expense-to-revenue calculation per client, no scoring of which services each client is consuming. The portfolio exists. The data to understand the portfolio does not. This is the central operational gap, and it is common in regional PEOs of this size and tenure.</p>
+        <span class="obs-signal">What it signals: revenue leakage is invisible until it compounds to a crisis</span>
+      </div>
+    </div>
+
+    <div class="observation">
+      <div class="obs-num">07</div>
+      <div>
+        <div class="obs-title">Three inbound channels with no attribution</div>
+        <p class="obs-body">Dickason markets three inbound paths: Brokers and Agents, Refer a Client, and Direct. Without a CRM tracking channel attribution, there is no way to measure which channel drives the most revenue, which brokers are over- or under-compensated relative to the business they bring, or which referral relationships deserve more investment.</p>
+        <span class="obs-signal">What it signals: some brokers are being overpaid; some referrals are being undercredited</span>
+      </div>
+    </div>
+
+    <div class="observation">
+      <div class="obs-num">08</div>
+      <div>
+        <div class="obs-title">Texas and New Mexico licensure only, with broader marketing language</div>
+        <p class="obs-body">Dickason markets its geographic reach with language that includes Arizona. PEO licensure, however, covers Texas and New Mexico. If a client expands into Arizona and needs PEO coverage there, Dickason cannot service that client through a licensed entity. Without a system tracking where clients actually have employees, that exposure is invisible until a client calls asking about a new Phoenix hire.</p>
+        <span class="obs-signal">What it signals: successful clients growing out of the service footprint is both a risk and a growth decision</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- The money -->
+  <section>
+    <h2>The money we can see from here</h2>
+    <p class="lede">One client illustrates the problem. The portfolio audit shows how many times it repeats.</p>
+
+    <div class="math-card">
+      <div class="math-card-eyebrow">The math on one client</div>
+      <h3>The floor of the profitability problem</h3>
+      <p>One long-tenure client in the book. Three worksite employees. Charged at $15 per employee per payroll. Total annual revenue: roughly $1,000. Service consumed: full 941 quarterly filings, ongoing payroll administration, tax reconciliation, HR compliance overhead. Skilled accounting hours every month. Cost to serve: over $2,000 per year.</p>
+
+      <div class="math-numbers">
+        <div class="math-num">
+          <div class="math-num-label">Annual revenue (actual)</div>
+          <div class="math-num-value">$1,000</div>
+        </div>
+        <div class="math-num">
+          <div class="math-num-label">Annual cost to serve</div>
+          <div class="math-num-value">$2,000+</div>
+        </div>
+        <div class="math-num">
+          <div class="math-num-label">Properly priced</div>
+          <div class="math-num-value">$5,000</div>
+        </div>
+        <div class="math-num">
+          <div class="math-num-label">Margin lift on renegotiation</div>
+          <div class="math-num-value gold">+$4,000/yr</div>
+        </div>
+      </div>
+
+      <p>This client is not an outlier. It is the pattern that emerges when a book of long-tenure clients has not had a structured pricing review. Rates set five or ten years ago do not reflect what compliance and service complexity cost today. And no one renegotiates a relationship they value without a reason to.</p>
+      <p style="margin-bottom: 0;">The portfolio audit in Stage 02 applies this math to every client in the book. Even finding three more clients at this floor represents $12,000 per year in recurring margin, starting the day after the renegotiation conversation. The conservative portfolio-level estimate for pricing corrections: $100,000 to $500,000 in recurring annual revenue, depending on how many similar situations are in the book.</p>
+    </div>
+
+    <div class="pull">"We know about one client at that floor. The audit finds the rest. Even two more pays the engagement back in year one."</div>
+  </section>
+
+  <!-- Operating risk -->
+  <section>
+    <h2>The operating risk that is easier to find now than later</h2>
+
+    <div class="risk-block">
+      <div class="risk-block-eyebrow">Compliance exposure</div>
+      <h3>Co-employment in two states touches twenty regulatory categories.</h3>
+      <p>A PEO carrying co-employer status in Texas and New Mexico is a compliance-heavy operation. The categories below represent the areas where gaps create liability. Some have grace periods when regulators find issues. Several do not.</p>
+
+      <div class="risk-cats">
+        <div class="risk-cat">Workers comp class code accuracy</div>
+        <div class="risk-cat">ACA reporting (ALE crossing at 50 FTE)</div>
+        <div class="risk-cat">SUTA registration by state</div>
+        <div class="risk-cat">I-9 documentation and retention</div>
+        <div class="risk-cat">401(k) deposit timing</div>
+        <div class="risk-cat">Form 5500 audit triggers (100+ participants)</div>
+        <div class="risk-cat">FMLA notice and recordkeeping</div>
+        <div class="risk-cat">COBRA administration timelines</div>
+        <div class="risk-cat">Multi-state nexus for out-of-state employees</div>
+        <div class="risk-cat">EPLI coverage alignment with actual risk profile</div>
+      </div>
+
+      <p>Alberto indicated the compliance picture has not had a structured review in some time. The Stage 02 Compliance Risk Inventory scores Dickason across all twenty categories and identifies the highest-risk areas before a regulator does. The penalties in co-employment are not gradual. They arrive as lump sums, and they arrive suddenly.</p>
+      <p><strong>The compliance inventory is not optional for a PEO of Dickason's tenure and complexity.</strong> It is the foundation that the rest of the operating system rests on.</p>
+    </div>
+  </section>
+
+  <!-- What we propose -->
+  <section>
+    <h2>What we propose</h2>
+    <p class="lede">A structured engagement with the database as the core deliverable, not a report that gets filed away.</p>
+
+    <div class="engagement-bar">
+      <div class="engagement-bar-eyebrow">Client Database Rebuild + Revenue Leakage Audit</div>
+      <h3>The operating system Dickason needs for the next chapter.</h3>
+      <p>The full engagement runs in five stages. Each one earns the next. Either side can stop at any milestone. The headline deliverable is a custom database built for Dickason's service lines, pricing structure, and way of working. It scores every client, tracks every compliance requirement, drives the alerts the team needs, and gives leadership a real-time picture of the book.</p>
+
+      <div class="stages-brief">
+        <div class="stage-pill">
+          <span class="stage-pill-label">Stage 01</span>
+          <div class="stage-pill-name">Discover</div>
+        </div>
+        <div class="stage-pill">
+          <span class="stage-pill-label">Stage 02</span>
+          <div class="stage-pill-name">Diagnose</div>
+        </div>
+        <div class="stage-pill">
+          <span class="stage-pill-label">Stage 03</span>
+          <div class="stage-pill-name">Design</div>
+        </div>
+        <div class="stage-pill">
+          <span class="stage-pill-label">Stage 04</span>
+          <div class="stage-pill-name">Deliver</div>
+        </div>
+        <div class="stage-pill">
+          <span class="stage-pill-label">Stage 05</span>
+          <div class="stage-pill-name">Compound</div>
+        </div>
+      </div>
+
+      <p>Stage 01 maps the operation from inside: meet the team, inventory the systems, walk the workflows, confirm or correct every assumption in this document. Stage 02 delivers the Compliance Risk Inventory and the Client Roster Snapshot. Stage 03 produces the renegotiation roadmap and the database architecture. Stage 04 deploys the system and trains the team. Stage 05 is ongoing partnership at Dickason's discretion.</p>
+      <p>The full proposal, including scope by stage and engagement terms, is at <a href="/dmdickason">the operational review</a>. Fees are discussed directly with Don and Martha, not on a public page.</p>
+    </div>
+  </section>
+
+  <!-- For Alberto -->
+  <section>
+    <h2>For Alberto: the conversation with Don and Martha</h2>
+
+    <div class="champion">
+      <div class="champion-person">
+        <div class="champion-person-name">What Don will want to know</div>
+        <p>Start with the math on one client: three worksite employees, $15 per employee per payroll, losing money on every pay cycle. Tell him the portfolio audit is designed to find more clients like it. Tell him the engagement pays for itself if we find even two more. The conservative estimate for portfolio-level pricing corrections is $100,000 to $500,000 in recurring annual revenue. That is the financial conversation he will want to have first.</p>
+      </div>
+      <div class="champion-person">
+        <div class="champion-person-name">What Martha will want to know</div>
+        <p>Lead with the compliance inventory. Tell her it covers twenty regulatory categories across both states. In co-employment, the penalties do not arrive as warnings. They arrive suddenly and they are expensive. The inventory is how Dickason knows exactly where it stands before a regulator asks. That is a concrete reason to act now rather than after an issue surfaces.</p>
+      </div>
+      <div class="champion-person">
+        <div class="champion-person-name">What both will want answered</div>
+        <p>Why now, what it costs, and why your brother. The answer to the first: the competitive landscape is not waiting. Justworks, Rippling, and ADP TotalSource are all investing in client-facing tooling that regional PEOs cannot match on reputation alone. What Don and Martha built over sixty years in El Paso is real and it is defensible. But without an operational engine underneath those relationships, they slowly coast instead of compound. The answer to the second is in the full proposal. The answer to the third is in the disclosure below.</p>
+      </div>
+      <p style="margin-top: 14px; font-size: 15px;">If they want more context before a conversation, point them to <a href="/" style="color: var(--accent); border-bottom: 1px solid var(--accent-soft); text-decoration: none;">the practice</a>, <a href="/pulse" style="color: var(--accent); border-bottom: 1px solid var(--accent-soft); text-decoration: none;">the platform</a>, or <a href="/process" style="color: var(--accent); border-bottom: 1px solid var(--accent-soft); text-decoration: none;">the method</a>.</p>
+    </div>
+  </section>
+
+  <!-- Family disclosure -->
+  <section>
+    <h2>Family disclosure</h2>
+
+    <div class="family">
+      <h3>Disclosed up front, structured for independence</h3>
+      <p>Alberto and the principal at Peregrine Consultants are brothers. That relationship is the reason this conversation exists. It is also the reason the structure has to be airtight. Here is how it protects everyone:</p>
+      <ul>
+        <li><strong>Don Dickason and Martha Olguin-Dickason are the contracting parties.</strong> They sign the agreement, approve the deliverables, approve the invoices. Alberto is the operational point of contact, not the approver.</li>
+        <li><strong>The fee is at market rate,</strong> benchmarked against published industry figures. No family discount, no premium.</li>
+        <li><strong>Either side can stop</strong> the engagement at the end of any stage milestone. No further fees due.</li>
+        <li><strong>Peregrine Consultants carries $1M in professional liability insurance</strong> and contracts as an LLC, like any other vendor.</li>
+        <li><strong>A signed family acknowledgment</strong> by all parties gets executed at kickoff, documenting the relationship and the independence of the engagement.</li>
+      </ul>
+      <p style="margin-top: 14px;">The structure above exists so the work earns its place on its own, and so Alberto never has to wonder whether it did.</p>
+    </div>
+  </section>
+
+  <!-- Closing -->
+  <section class="closing">
+    <p class="closing-line">The next step is a 30-minute conversation with Don and Martha. We walk through what we found, answer their questions directly, and decide together whether it makes sense to move into Stage 01.</p>
+    <p style="font-size: 15px; color: var(--ink-soft); margin-top: 6px; margin-bottom: 32px;">For the full proposal with stage-by-stage scope and deliverables, see <a href="/dmdickason" style="color: var(--accent); border-bottom: 1px solid var(--accent-soft); text-decoration: none;">the operational review</a>.</p>
+    <p class="closing-name">I. Diaz</p>
+    <p class="closing-meta">
+      Peregrine Consultants<br>
+      <a href="mailto:ivan@ivanadiaz.com">ivan@ivanadiaz.com</a> &middot; <a href="https://ivanadiaz.com">ivanadiaz.com</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <div class="doc-footer">
+    Research conducted before engagement. All findings are based on public sources and direct communication with Alberto Diaz. Stage 01 confirms or corrects each assumption.
+    <br>Learn more about our <a href="/process">method</a>, the <a href="/pulse">platform we build for engaged clients</a>, or <a href="/">Peregrine Consultants</a>.
+    <br><span class="peregrine">Peregrine Consultants, 2026</span>
+    <br><span style="font-size: 11px; opacity: 0.7;">dmDickason logo and tagline used with attribution. dmDickason Personnel Services. NAPEO member in good standing. Established 1965. El Paso.</span>
+  </div>
+
+</div>
+
+</body>
+</html>

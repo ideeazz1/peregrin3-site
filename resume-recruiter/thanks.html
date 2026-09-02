@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script defer src="/config/plausible.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="/favicon.png">
+<meta name="theme-color" content="#343A40">
+<meta name="robots" content="noindex, nofollow">
+<title>Intake received — Peregrine Headhunter</title>
+<meta name="description" content="Your Peregrine Headhunter intake was received.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1f1d18;
+    --ink-light: #4a463e;
+    --ink-soft: #756f63;
+    --paper: #faf6ec;
+    --paper-deep: #f3ecd9;
+    --accent: #6b3326;
+    --line: #d4cab2;
+    --ok: #2f5d3a;
+    --ok-soft: #e5f0e7;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Source Sans 3", system-ui, sans-serif;
+    color: var(--ink);
+    background:
+      radial-gradient(ellipse 80% 50% at 10% -10%, #efe4c8 0%, transparent 55%),
+      radial-gradient(ellipse 60% 40% at 100% 0%, #e8dcc4 0%, transparent 45%),
+      var(--paper);
+    line-height: 1.55;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  .topnav {
+    border-bottom: 1px solid var(--line);
+    padding: 16px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(250, 246, 236, 0.92);
+    backdrop-filter: blur(8px);
+  }
+  .nav-brand {
+    font-family: Fraunces, Georgia, serif;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .nav-meta { font-size: 13px; color: var(--ink-soft); font-weight: 500; }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 72px 24px 96px;
+  }
+  .mark {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ok);
+    font-weight: 600;
+    margin-bottom: 18px;
+    padding: 6px 10px;
+    background: var(--ok-soft);
+    border: 1px solid #b9d4bf;
+  }
+  h1 {
+    font-family: Fraunces, Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(36px, 6vw, 52px);
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin-bottom: 18px;
+  }
+  .deck {
+    font-family: Fraunces, Georgia, serif;
+    font-style: italic;
+    font-size: 20px;
+    color: var(--ink-light);
+    max-width: 36ch;
+    margin-bottom: 36px;
+  }
+  .next {
+    padding: 22px;
+    background: var(--paper-deep);
+    border: 1px solid var(--line);
+    margin-bottom: 28px;
+  }
+  .next h2 {
+    font-family: Fraunces, Georgia, serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .next ul {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+  }
+  .next li {
+    font-size: 15px;
+    color: var(--ink-light);
+    padding-left: 22px;
+    position: relative;
+  }
+  .next li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.45em;
+    width: 8px;
+    height: 8px;
+    background: var(--accent);
+  }
+  .note {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-bottom: 28px;
+  }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .actions a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 12px 18px;
+    letter-spacing: 0.02em;
+  }
+  .actions a.primary {
+    background: var(--accent);
+    color: #fffaf2;
+  }
+  .actions a.ghost {
+    color: var(--accent);
+    border: 1px solid var(--line);
+    background: transparent;
+  }
+  .foot {
+    margin-top: 48px;
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+  .foot a { color: var(--accent); }
+</style>
+</head>
+<body>
+  <header class="topnav">
+    <a class="nav-brand" href="/">Peregrine</a>
+    <span class="nav-meta">Headhunter intake</span>
+  </header>
+
+  <main class="wrap">
+    <p class="mark">Submitted</p>
+    <h1 id="headline">Intake received</h1>
+    <p class="deck" id="deck">Thank you — we have your résumé and search profile. A confirmation is on its way to your inbox.</p>
+
+    <section class="next" aria-labelledby="next-title">
+      <h2 id="next-title">What happens next</h2>
+      <ul id="next-list">
+        <li>We review your intake and lock the search profile</li>
+        <li>Weekday GO packets land in your email when a live role fits</li>
+        <li>You click Apply yourself within 48 hours and reply Applied or Passed</li>
+      </ul>
+    </section>
+
+    <p class="note">Check spam if you do not see the confirmation within a few minutes. Reply to that email if anything needs correcting.</p>
+
+    <div class="actions">
+      <a class="primary" href="/">Back to Peregrine</a>
+      <a class="ghost" id="again-link" href="/resume-recruiter/">Submit another intake</a>
+    </div>
+
+    <p class="foot">
+      Part of <a href="/">Peregrine</a> Headhunter. No fee while we prove packet quality.
+    </p>
+  </main>
+
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var track = String(params.get('track') || '').toLowerCase();
+      var intern = track === 'intern' || track === 'internship';
+      var name = (params.get('name') || '').trim().replace(/[<>&"']/g, '');
+
+      if (intern) {
+        document.querySelector('.nav-meta').textContent = 'Intern intake';
+        document.getElementById('deck').textContent =
+          'We have your résumé, school facts, and search profile. A confirmation is on its way to your inbox.';
+        document.getElementById('next-list').innerHTML =
+          '<li>We review your school facts, availability, and pay rules</li>' +
+          '<li>GO packets follow internship cycles — not endless weekday volume</li>' +
+          '<li>You click Apply yourself within 48 hours and reply Applied or Passed</li>';
+        document.getElementById('again-link').href = '/resume-recruiter/?track=intern';
+        document.getElementById('again-link').textContent = 'Submit another intern intake';
+      }
+
+      if (!name) return;
+      document.getElementById('headline').textContent = 'Thanks, ' + name;
+      if (!intern) {
+        document.getElementById('deck').textContent =
+          'We have your résumé and search profile. A confirmation is on its way to your inbox.';
+      }
+    })();
+  </script>
+</body>
+</html>
