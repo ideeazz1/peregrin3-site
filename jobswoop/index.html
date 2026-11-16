@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script defer src="/config/plausible.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="/jobswoop/icon.svg">
+<meta name="theme-color" content="#0b1118">
+<meta name="robots" content="index, follow">
+<title>JobSwoop — Spot it. Swoop in. Get hired.</title>
+<meta name="description" content="Your next move starts here. JobSwoop helps you find roles that fit and prepare to apply, from your first internship to your next career move.">
+<link rel="canonical" href="https://peregrin3.com/jobswoop/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JobSwoop">
+<meta property="og:title" content="JobSwoop — Spot it. Swoop in. Get hired.">
+<meta property="og:description" content="A tough job market is easier to navigate with someone in your corner. Find your next move with JobSwoop.">
+<meta property="og:url" content="https://peregrin3.com/jobswoop/">
+<meta property="og:image" content="https://peregrin3.com/jobswoop/social.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="JobSwoop. Spot it. Swoop in. Get hired.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/jobswoop/style.css">
+</head>
+<body>
+  <header class="topnav">
+    <a class="nav-brand" href="/jobswoop/"><img src="/jobswoop/icon.svg" width="30" height="30" alt="">JobSwoop<span class="brand-dot">.</span></a>
+    <span class="nav-meta" id="nav-meta">Your next move</span>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow"><span class="status-dot"></span> Small steps. Big next moves.</p>
+      <h1>Spot it.<br><span class="cyan">Swoop in.</span><br>Get hired.</h1>
+<p class="mission">The job market is tough. You shouldn’t have to figure it out alone. From your first internship to your next chapter, we’re here to help you move forward.</p>
+<a class="start-link" href="#get-started">Find your next move <span aria-hidden="true">↗</span></a>
+<div class="how-it-works" aria-label="How JobSwoop works"><span><b>01</b> Share your story</span><span><b>02</b> Get matched</span><span><b>03</b> Make your move</span></div>
+<div id="get-started" class="intake-heading"><p class="eyebrow">Let’s get you moving</p><h2 id="hero-title">Your next chapter starts here.</h2></div>
+      <p class="deck" id="hero-deck">Upload your résumé and the facts we need to find live roles and prepare apply packets. You click Apply — we never submit for you.</p>
+
+      <div class="track-chooser" role="group" aria-label="Search track">
+        <button type="button" class="track-btn" id="track-fulltime" data-track="fulltime" aria-pressed="true">
+          <strong>Full-time search</strong>
+          <span>Ready for your next role? Start with what you bring.</span>
+        </button>
+        <button type="button" class="track-btn" id="track-intern" data-track="intern" aria-pressed="false">
+          <strong>Internship / early career</strong>
+          <span>Your projects and potential count. Start here.</span>
+        </button>
+      </div>
+      <p class="proof-line track-panel" data-track="intern" hidden id="proof-line">
+        Good enough to start: résumé or project link, school, and when you can work. You do not need a full career story.
+      </p>
+    </section>
+
+    <aside class="expectations track-panel" data-track="fulltime" aria-labelledby="min-title-ft">
+      <h2 id="min-title-ft">What you’ll need</h2>
+      <p>Free during our pilot. A complete profile helps us find roles that fit you. A GO packet is a matching role with the materials you need to apply.</p>
+      <ul>
+        <li>Legal name, email, phone, and mailing address</li>
+        <li>Current résumé (PDF preferred) — truthful dates and titles only</li>
+        <li>Professional summary (4–8 sentences): who you are and what you want next</li>
+        <li>3–5 target job titles and location rules (LinkedIn URL optional)</li>
+        <li>Honest skill levels so we can match you with the right opportunities</li>
+        <li>Named deal-breakers (industry, commute, travel, sponsorship)</li>
+        <li>You apply yourself within 48 hours of a GO packet and reply Applied or Passed</li>
+      </ul>
+    </aside>
+
+    <aside class="expectations track-panel" data-track="intern" hidden aria-labelledby="min-title-in">
+      <h2 id="min-title-in">Your starting kit</h2>
+      <p>Projects and coursework count when work history is thin. A complete profile helps us find your fit. A GO packet is a matching role with the materials you need to apply.</p>
+      <ul>
+        <li>Legal name, email, phone, and mailing address</li>
+        <li>School / program and expected graduation date</li>
+        <li>Résumé (PDF preferred) — or a real project / portfolio link if the résumé is light</li>
+        <li>Short note (3–5 sentences): why this internship and what you can do now</li>
+        <li>Availability window (term + hours) and pay rules (stipend / unpaid OK?)</li>
+        <li>Target functions + location rules; honest skill levels (coursework vs used vs daily)</li>
+        <li>You apply yourself within 48 hours of a GO packet and reply Applied or Passed</li>
+      </ul>
+    </aside>
+
+    <form id="recruit-form" novalidate>
+      <input type="hidden" id="track" name="track" value="fulltime">
+
+      <div class="step">
+        <p class="step-label">Step 1</p>
+        <h2 id="step1-title">Who you are</h2>
+        <p id="step1-deck">Identity and contact for packets — not published.</p>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="fullName">Full name <span class="req">*</span></label>
+          <input id="fullName" name="fullName" type="text" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="email">Email <span class="req">*</span></label>
+          <input id="email" name="email" type="email" required autocomplete="email">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="phone">Phone <span class="req">*</span></label>
+          <input id="phone" name="phone" type="tel" required autocomplete="tel">
+        </div>
+        <div class="field">
+          <label for="linkedin">LinkedIn URL <span class="opt">(optional)</span></label>
+          <input id="linkedin" name="linkedin" type="url" placeholder="https://www.linkedin.com/in/…">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="address">Mailing address <span class="req">*</span></label>
+        <input id="address" name="address" type="text" required autocomplete="street-address" placeholder="Street, City, State, ZIP">
+        <p class="hint">Used only for application packets and contact — not published.</p>
+      </div>
+
+      <div class="track-panel" data-track="intern" hidden>
+        <div class="row">
+          <div class="field">
+            <label for="school">School <span class="req">*</span></label>
+            <input id="school" name="school" type="text" placeholder="University / college name">
+          </div>
+          <div class="field">
+            <label for="program">Program / major <span class="req">*</span></label>
+            <input id="program" name="program" type="text" placeholder="e.g. Information Systems">
+          </div>
+        </div>
+        <div class="row" style="margin-top:18px">
+          <div class="field">
+            <label for="gradDate">Expected graduation <span class="req">*</span></label>
+            <input id="gradDate" name="gradDate" type="text" placeholder="e.g. May 2027">
+          </div>
+          <div class="field">
+            <label for="portfolioUrl">Portfolio / GitHub <span class="opt">(optional)</span></label>
+            <input id="portfolioUrl" name="portfolioUrl" type="url" placeholder="https://…">
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="summary" id="summary-label">Professional summary <span class="req">*</span></label>
+        <textarea id="summary" name="summary" required minlength="80" placeholder="4–8 sentences: who you are, what you’ve built, what roles you’re hunting, proof you already own."></textarea>
+      </div>
+
+      <div class="field">
+        <label for="resume">Résumé upload <span class="req">*</span></label>
+        <div class="file-box">
+          <input id="resume" name="resume" type="file" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" required>
+          <p class="hint" id="resume-hint">PDF preferred. Max 1.5 MB.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <p class="step-label">Step 2</p>
+        <h2 id="step2-title">What to hunt</h2>
+        <p id="step2-deck">Titles, location, and hard filters so packets stay honest.</p>
+      </div>
+
+      <div class="field">
+        <label for="targetTitles" id="titles-label">Target job titles (3–5) <span class="req">*</span></label>
+        <textarea id="targetTitles" name="targetTitles" required placeholder="e.g. Revenue Operations Analyst&#10;Business Systems Analyst&#10;AI Operations Specialist"></textarea>
+      </div>
+
+      <div class="field">
+        <label for="locationRules">Location rules <span class="req">*</span></label>
+        <input id="locationRules" name="locationRules" type="text" required placeholder="Remote US · Hybrid Austin TX · no onsite NYC">
+      </div>
+
+      <div class="track-panel" data-track="intern" hidden>
+        <div class="row">
+          <div class="field">
+            <label for="availability">Availability window <span class="req">*</span></label>
+            <input id="availability" name="availability" type="text" placeholder="Summer 2026 · full-time · or Fall · 15 hrs/week">
+          </div>
+          <div class="field">
+            <label for="payRules">Pay rules <span class="req">*</span></label>
+            <select id="payRules" name="payRules">
+              <option value="">Select…</option>
+              <option value="paid_only">Paid / stipend only</option>
+              <option value="stipend_or_unpaid">Stipend or unpaid OK</option>
+              <option value="unpaid_ok">Unpaid OK (credit / experience)</option>
+            </select>
+          </div>
+        </div>
+        <div class="field" style="margin-top:18px">
+          <label for="courseworkProof">Coursework / projects as proof <span class="opt">(optional)</span></label>
+          <textarea id="courseworkProof" name="courseworkProof" placeholder="Class projects, labs, club work, or shipped school work we can cite honestly."></textarea>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="sponsorshipNeeded" id="sponsor-label">Sponsorship needed? <span class="req">*</span></label>
+          <select id="sponsorshipNeeded" name="sponsorshipNeeded" required>
+            <option value="no">No</option>
+            <option value="yes">Yes</option>
+          </select>
+          <p class="hint track-panel" data-track="intern" hidden>Include CPT / OPT / visa needs in deal-breakers if relevant.</p>
+        </div>
+        <div class="field track-panel" data-track="fulltime">
+          <label for="compFloor">Comp floor (optional)</label>
+          <input id="compFloor" name="compFloor" type="text" placeholder="e.g. $95k base">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="toolsClaimed" id="tools-label">Tools you can claim at used / daily / expert</label>
+        <textarea id="toolsClaimed" name="toolsClaimed" placeholder="Salesforce — used&#10;Excel — daily&#10;Claude/ChatGPT workflows — used&#10;Tableau — exposure (do not overclaim)"></textarea>
+        <p class="hint" id="tools-hint">We match hard JD requirements to this list. Overclaiming wastes a packet.</p>
+      </div>
+
+      <div class="field">
+        <label for="mustHaves">Hard must-haves</label>
+        <textarea id="mustHaves" name="mustHaves" placeholder="Remote, no unpaid trials, …"></textarea>
+      </div>
+
+      <div class="field">
+        <label for="dealBreakers">Deal-breakers</label>
+        <textarea id="dealBreakers" name="dealBreakers" placeholder="Mortgage LO titles, &gt;20% travel, …"></textarea>
+      </div>
+
+      <div class="hp" aria-hidden="true">
+        <label for="company_website">Company website</label>
+        <input id="company_website" name="company_website" type="text" tabindex="-1" autocomplete="off">
+      </div>
+
+      <div class="checks">
+        <label class="check">
+          <input id="acceptMinimums" name="acceptMinimums" type="checkbox" required>
+          <span id="check-minimums">I meet the minimum expectations above. My résumé and tool claims are accurate.</span>
+        </label>
+        <label class="check">
+          <input id="acceptApplyCommitment" name="acceptApplyCommitment" type="checkbox" required>
+          <span>I will click Apply myself within 48 hours of a GO packet and reply Applied or Passed. JobSwoop will not auto-submit.</span>
+        </label>
+      </div>
+
+      <button type="submit" id="submit-btn">Start my search <span aria-hidden="true">↗</span></button>
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+    </form>
+
+    <p class="foot">
+      Powered by <a href="https://peregrin3.com/">Peregrin3</a>. No fee during our pilot.
+      Questions: email the person who sent you this link.
+      Looking for an internship? <a href="/jobswoop/?track=intern">Start with early career</a>
+    </p>
+  </main>
+
+  <script src="/jobswoop/recruit.js"></script>
+</body>
+</html>

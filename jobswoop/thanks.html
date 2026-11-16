@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script defer src="/config/plausible.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="/jobswoop/icon.svg">
+<meta name="theme-color" content="#0b1118">
+<meta name="robots" content="noindex, nofollow">
+<title>Intake received — JobSwoop</title>
+<link rel="canonical" href="https://peregrin3.com/jobswoop/thanks.html">
+<meta name="description" content="Your JobSwoop intake was received.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/jobswoop/style.css">
+</head>
+<body>
+  <header class="topnav">
+    <a class="nav-brand" href="/jobswoop/"><img src="/jobswoop/icon.svg" width="30" height="30" alt="">JobSwoop<span class="brand-dot">.</span></a>
+    <span class="nav-meta">One step closer</span>
+  </header>
+
+  <main class="wrap">
+    <p class="mark">Submitted</p>
+    <h1 id="headline">Intake received</h1>
+    <p class="deck" id="deck">Thank you — we have your résumé and search profile. A confirmation is on its way to your inbox.</p>
+
+    <section class="next" aria-labelledby="next-title">
+      <h2 id="next-title">What happens next</h2>
+      <ul id="next-list">
+        <li>We review your intake and lock the search profile</li>
+        <li>Application packets land in your email when a live role fits</li>
+        <li>You click Apply yourself within 48 hours and reply Applied or Passed</li>
+      </ul>
+    </section>
+
+    <p class="note">Check spam if you do not see the confirmation within a few minutes. Reply to that email if anything needs correcting.</p>
+
+    <div class="actions">
+      <a class="primary" href="/jobswoop/">Back to JobSwoop</a>
+      <a class="ghost" id="again-link" href="/jobswoop/">Submit another intake</a>
+    </div>
+
+    <p class="foot">
+      Powered by <a href="https://peregrin3.com/">Peregrin3</a>. No fee during our pilot.
+    </p>
+  </main>
+
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var track = String(params.get('track') || '').toLowerCase();
+      var intern = track === 'intern' || track === 'internship';
+      var name = (params.get('name') || '').trim().replace(/[<>&"']/g, '');
+
+      if (intern) {
+        document.querySelector('.nav-meta').textContent = 'One step closer';
+        document.getElementById('deck').textContent =
+          'We have your résumé, school facts, and search profile. A confirmation is on its way to your inbox.';
+        document.getElementById('next-list').innerHTML =
+          '<li>We review your school facts, availability, and pay rules</li>' +
+          '<li>Application packets follow internship cycles</li>' +
+          '<li>You click Apply yourself within 48 hours and reply Applied or Passed</li>';
+        document.getElementById('again-link').href = '/jobswoop/?track=intern';
+        document.getElementById('again-link').textContent = 'Submit another intern intake';
+      }
+
+      if (!name) return;
+      document.getElementById('headline').textContent = 'Thanks, ' + name;
+      if (!intern) {
+        document.getElementById('deck').textContent =
+          'We have your résumé and search profile. A confirmation is on its way to your inbox.';
+      }
+    })();
+  </script>
+</body>
+</html>
